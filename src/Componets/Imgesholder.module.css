@@ -1,0 +1,44 @@
+
+  .contendholder li
+  {
+    list-style-type: none;
+    float: left;
+    margin-left: 5%;
+    }
+  
+  .flipbox {
+    background-color: transparent;
+    width: 200px;
+    height:300px;
+  }
+  
+  .flipboxinner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flipbox:hover .flipboxinner {
+    transform: rotateY(180deg);
+   
+  }
+  
+  .fliboxfront, .flipboxback {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+  
+  
+  
+  .flipboxback {
+    /* background-color: rgb(192, 221, 249); */
+    background-color:  #FECCC8;
+    font-size:20px;
+    transform: rotateY(180deg);
+  }
