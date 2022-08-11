@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import  Container  from './Componets/container';
 // import TextForm from './Componets/TextForm';
-import InputText from './Componets/InputText';
+import CardInfo from './Componets/cardInfo';
 
 
 
@@ -17,7 +17,8 @@ root.render(
     <Container />
     <index/> */}
     {/* <TextForm/> */}
-   <InputText/>
+   {/* <InputText/> */}
+   <CardInfo/>
 
   </React.StrictMode>
 );
