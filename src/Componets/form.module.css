@@ -1,0 +1,39 @@
+.headingHolder
+{
+    text-align: center;
+    margin-top:3%;
+}
+.mainContainerWapper
+{
+    margin-left:10%;
+}
+
+.formHolder
+{
+}
+.inputHolder
+{
+    border-width:0px;
+    border:none;
+    outline:none;
+}
+.formBoxHolder
+{
+    border-bottom:1px solid black;
+    margin-top:3%;
+}
+.heading
+{
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.margin
+{
+    margin-top:3%;
+}
+.inputHolder2
+{
+    border-width:0px;
+  border-bottom:1px solid black;
+    outline:none;
+}

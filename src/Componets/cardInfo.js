@@ -1,7 +1,8 @@
 import React from 'react'
 import styles from './cardInfo.module.css';
+import NewCard from './NewCard'
 
-export default function cardInfo() {
+export default function cardInfo(props) {
     let studentList=[
         {name:"monika ghimire",
         Id:"1",
@@ -21,18 +22,14 @@ SchoolName:"schools"
 
   return (
     <>
+         
          {studentList.map(x => (
-          <div className={styles.CardHolder}>
-            <p>Id :  {x.Id}</p>
-            <p>student Name :   {x.name}</p>
-            <p> School Name : {x.SchoolName}</p>
-          </div>
-          
-            
+          <NewCard Id={x.Id} Name={x.name} SchoolName={x.SchoolName}/>        
          ))}
+        
           
         
        
     </>
   )
-}
+        }

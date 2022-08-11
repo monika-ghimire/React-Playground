@@ -6,6 +6,7 @@ import reportWebVitals from './reportWebVitals';
 // import  Container  from './Componets/container';
 // import TextForm from './Componets/TextForm';
 import CardInfo from './Componets/cardInfo';
+import ProductForm from './Componets/ProductForm';
 
 
 
@@ -18,7 +19,8 @@ root.render(
     <index/> */}
     {/* <TextForm/> */}
    {/* <InputText/> */}
-   <CardInfo/>
+   {/* <CardInfo /> */}
+     <ProductForm/>
 
   </React.StrictMode>
 );
