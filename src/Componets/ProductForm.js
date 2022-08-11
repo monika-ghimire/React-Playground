@@ -2,15 +2,33 @@ import React from 'react'
 import styles from './form.module.css';
 
 export default function form() {
+   
+
+const submitForm=(event)=>{
+    event.preventDefault();
+    let product=event.target;
+    var newproduct={
+        product_name:product[0].value,
+        product_family:product[1].value,
+        product_from_inventory:product[2].value,
+        Year_product_release:product[3].value,
+        Type_of_product:product[4].value,
+        Dimensions_the_product:product[5].value,
+        Image_of_product :product[5].value
+    }
+    console.log(newproduct);
+
+
+}
+
+
   return (
     <div className='container-fluid'>
         <div className={styles.mainContainerWapper}>
-
-       
         <div className={styles.headingHolder }><h3 className={styles.heading}>Create a product</h3></div>
         <div className='container-fluid'>
         <div className='container-fluid'>
-            <form className={styles.formHolder}>
+            <form className={styles.formHolder} onSubmit={submitForm}>
                 <div className={styles.formBoxHolder}> <p className={styles.heading}>product name</p>
                     <input className={styles.inputHolder} placeholder='pixel 6 plus'/>
                 </div>
@@ -58,7 +76,7 @@ export default function form() {
                   <label class="custom-file-label" for="customFile">Choose file</label>
                 </div>
                 </div>
-
+            <input type="submit" ></input>
             </form>
         </div>
         </div>
